@@ -6,24 +6,30 @@ import android.os.Parcelable;
 public class User implements Parcelable {
 
     private String username;
-    private String name;
     private String avatar;
+    private String url;
+    private String name;
     private String company;
     private String location;
-    private String repository;
-    private String follower;
-    private String following;
+    private String blog;
+    private int public_repo;
+    private int public_gists;
+    private int followers;
+    private int following;
 
     public User(){}
 
-    public User(String UserName, String Name, String Avatar, String Company, String Location, String Repository, String Follower, String Following){
+    public User(String UserName, String Name, String Avatar, String url, String Company, String Location, String blog, int public_repo, int public_gists, int followers, int Following){
         this.username = UserName;
         this.name = Name;
         this.avatar = Avatar;
+        this.url = url;
         this.company = Company;
         this.location = Location;
-        this.repository = Repository;
-        this.follower = Follower;
+        this.blog = blog;
+        this.public_repo = public_repo;
+        this.public_gists = public_gists;
+        this.followers = followers;
         this.following = Following;
     }
 
@@ -48,6 +54,13 @@ public class User implements Parcelable {
         return avatar;
     }
 
+    public void setUrl(String url) {
+        this.url = url;
+    }
+    public String getUrl() {
+        return url;
+    }
+
     public void setCompany(String company) {
         this.company = company;
     }
@@ -62,24 +75,38 @@ public class User implements Parcelable {
         return location;
     }
 
-    public void setRepository(String repository) {
-        this.repository = repository;
+    public void setBlog(String blog) {
+        this.blog = blog;
     }
-    public String getRepository() {
-        return repository;
-    }
-
-    public void setFollower(String follower) {
-        this.follower = follower;
-    }
-    public String getFollower() {
-        return follower;
+    public String getBlog() {
+        return blog;
     }
 
-    public void setFollowing(String following) {
+    public void setPublic_repo(int public_repo) {
+        this.public_repo = public_repo;
+    }
+    public int getPublic_repo() {
+        return public_repo;
+    }
+
+    public void setPublic_gists(int public_gists) {
+        this.public_gists = public_gists;
+    }
+    public int getPublic_gists() {
+        return public_gists;
+    }
+
+    public void setFollowers(int followers) {
+        this.followers = followers;
+    }
+    public int getFollowers() {
+        return followers;
+    }
+
+    public void setFollowing(int following) {
         this.following = following;
     }
-    public String getFollowing() {
+    public int getFollowing() {
         return following;
     }
 
@@ -87,22 +114,28 @@ public class User implements Parcelable {
         username = in.readString();
         name = in.readString();
         avatar = in.readString();
+        url = in.readString();
         company = in.readString();
         location = in.readString();
-        repository = in.readString();
-        follower = in.readString();
-        following = in.readString();
+        blog = in.readString();
+        public_repo = in.readInt();
+        public_gists = in.readInt();
+        followers = in.readInt();
+        following = in.readInt();
     }
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(username);
         dest.writeString(name);
         dest.writeString(avatar);
+        dest.writeString(url);
         dest.writeString(company);
         dest.writeString(location);
-        dest.writeString(repository);
-        dest.writeString(follower);
-        dest.writeString(following);
+        dest.writeString(blog);
+        dest.writeInt(public_repo);
+        dest.writeInt(public_gists);
+        dest.writeInt(followers);
+        dest.writeInt(following);
     }
     @Override
     public int describeContents() {

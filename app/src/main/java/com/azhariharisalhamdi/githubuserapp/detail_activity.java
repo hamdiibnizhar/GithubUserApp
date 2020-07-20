@@ -38,7 +38,7 @@ public class detail_activity extends AppCompatActivity {
         //get and set repository of github user
         TextView repositoryTv;
         repositoryTv = (TextView) findViewById(R.id.repository);
-        repositoryTv.setText(GithubUser.getRepository());
+        repositoryTv.setText(GithubUser.getPublic_repo());
 
         //get and set company of github user
         TextView companyTv;
@@ -53,7 +53,7 @@ public class detail_activity extends AppCompatActivity {
         //get and set follower of github user
         TextView followerTv;
         followerTv = (TextView) findViewById(R.id.follower);
-        followerTv.setText(GithubUser.getFollower());
+        followerTv.setText(GithubUser.getFollowers());
 
         //get and set following of github user
         TextView followingTv;

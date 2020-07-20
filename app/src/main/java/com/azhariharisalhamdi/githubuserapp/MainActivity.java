@@ -167,13 +167,13 @@ public class MainActivity extends AppCompatActivity {
                 temp.setLocation(dataParse);
             }
             else if (keyStr == "repository") {
-                temp.setRepository(dataParse);
+                temp.setPublic_repo(Integer.getInteger(dataParse));
             }
             else if (keyStr == "follower") {
-                temp.setFollower(dataParse);
+                temp.setFollowers(Integer.getInteger(dataParse));
             }
             else if (keyStr == "following") {
-                temp.setFollowing(dataParse);
+                temp.setFollowing(Integer.getInteger(dataParse));
             }
         }
         return temp;
