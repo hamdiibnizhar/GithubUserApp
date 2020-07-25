@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.TextView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.azhariharisalhamdi.githubuserapp.adapter.ListUsersAdapter;
@@ -30,29 +34,31 @@ import retrofit2.Response;
 public class SearchActivity extends AppCompatActivity {
 
     String TAG = "Search";
-    ArrayList<User> temp_userlist = new ArrayList<>();
-    ArrayList<User> userList = new ArrayList<>();
+    ArrayList<User> temp_userlist, userList;
     UsersApi userApi;
 
     private RecyclerView recyclerViewUser;
     private TextInputLayout usernameInput;
     private TextInputEditText textInput;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        setTitle(R.string.search_activity_label);
 
+        progressBar = findViewById(R.id.progressBar);
         usernameInput = findViewById(R.id.username_input);
         textInput = findViewById(R.id.textInput);
         recyclerViewUser = findViewById(R.id.recyclerViewUser);
         recyclerViewUser.setHasFixedSize(true);
+        progressBar.setVisibility(View.INVISIBLE);
 
         textInput.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                ArrayList<User> test = getUser_Async(textInput.getText().toString().trim());
-                userList.addAll(test);
-                showRecyclerList(userList);
+                progressBar.setVisibility(View.VISIBLE);
+                getUser_Async(textInput.getText().toString().trim());
                 return true;
             }
             return false;
@@ -64,32 +70,31 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(s.length() != 0){
-                    userList.addAll(getUser_Async(usernameInput.getEditText().getText().toString()));
-                    showRecyclerList(userList);
+                    progressBar.setVisibility(View.VISIBLE);
+                    getUser_Async(usernameInput.getEditText().getText().toString());
                 }
             }
             @Override
             public void afterTextChanged(Editable s) {
                 if(s.length() != 0){
-                    userList.addAll(getUser_Async(usernameInput.getEditText().getText().toString()));
-                    showRecyclerList(userList);
+                    progressBar.setVisibility(View.VISIBLE);
+                    getUser_Async(usernameInput.getEditText().getText().toString());
                 }
             }
         });
-        showRecyclerList(userList);
+
     }
 
-    public ArrayList<User> getUser_Async(String username){
-        userApi = BaseApiClient.getClient().create(UsersApi.class);
+    public void getUser_Async(String username){
+        UsersApi userApi = BaseApiClient.getClient().create(UsersApi.class);
         Call call = userApi.UserGithub(username);
         Log.d(TAG, "username : "+username);
-        ArrayList<User> mtemp_userlist = new ArrayList<User>();
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) {
                 if(response.isSuccessful()){
                     Log.d(TAG, "successful");
-                    temp_userlist.clear();
+                    temp_userlist = new ArrayList<>();
                     Users mRespons = (Users) response.body();
                     Log.d(TAG, "total_count : "+mRespons.getTotal_count());
                     ArrayList<Item> items = mRespons.getItems();
@@ -99,6 +104,10 @@ public class SearchActivity extends AppCompatActivity {
                         temp_user.setAvatar(items.get(i).getAvatar_url());
                         temp_userlist.add(temp_user);
                     }
+                    userList = new ArrayList<>();
+                    userList.addAll(temp_userlist);
+                    progressBar.setVisibility(View.INVISIBLE);
+                    showRecyclerList(userList);
                 }else{
                     Log.d(TAG, "not successful");
                 }
@@ -110,13 +119,44 @@ public class SearchActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_LONG).show();
             }
         });
-        mtemp_userlist = temp_userlist;
-        return mtemp_userlist;
     }
 
     private void showRecyclerList(ArrayList<User> userlist){
         recyclerViewUser.setLayoutManager(new LinearLayoutManager(this));
         ListUsersAdapter listUsersAdapter = new ListUsersAdapter(userlist);
         recyclerViewUser.setAdapter(listUsersAdapter);
+
+        listUsersAdapter.setOnItemClickCallback(new ListUsersAdapter.OnItemClickCallback(){
+            @Override
+            public void onItemClicked(User data) {
+//                showSelectedUser(data);
+                changeActivity(data);
+            }
+        });
+    }
+
+    private void showSelectedUser(User user) {
+        Toast.makeText(this, "Kamu memilih " + user.getUsername(), Toast.LENGTH_SHORT).show();
+    }
+
+    public void changeActivity(User user){
+        Intent moveWithObjectIntent = new Intent(SearchActivity.this, DetailSelectedActivity.class);
+        moveWithObjectIntent.putExtra(detail_activity.USER_DATA_DETAIL, user);
+        startActivity(moveWithObjectIntent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_change_settings) {
+            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(mIntent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

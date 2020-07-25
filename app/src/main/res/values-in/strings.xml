@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GithubUserApp</string>
+    <string name="main_activity_label">Daftar Pengguna</string>
+    <string name="search_activity_label">Cari Pengguna</string>
+    <string name="detail_activity_label">Detail Pengguna</string>
+    <string name="search_hint">Cari Nama Pengguna Github</string>
+    <string name="github_user">Pengguna Github</string>
+
+    <string name="detail_username_name">Pengguna\n(Nama)</string>
+    <string name="company_col">Perusahaan</string>
+    <string name="location_col">Lokasi</string>
+    <string name="blog_col">Blog</string>
+    <string name="repo_col">Repo/Gist</string>
+    <string name="following_col">Mengikuti</string>
+    <string name="followers_col">Pengikut</string>
+
+    <string name="tab_1_title">Pengikut</string>
+    <string name="tab_2_title">Mengikuti</string>
+
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+</resources>

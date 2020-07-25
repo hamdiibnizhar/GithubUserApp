@@ -1,31 +1,51 @@
 package com.azhariharisalhamdi.githubuserapp.models;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.ArrayList;
 
 public class DetailUsers {
     @SerializedName("login")
+    @Expose
     String username;
+
     @SerializedName("avatar_url")
+    @Expose
     String avatar_url;
+
     @SerializedName("url")
+    @Expose
     String url;
+
     @SerializedName("name")
+    @Expose
     String name;
+
     @SerializedName("company")
+    @Expose
     String company;
+
     @SerializedName("blog")
+    @Expose
     String blog;
+
     @SerializedName("location")
+    @Expose
     String location;
+
     @SerializedName("public_repos")
+    @Expose
     int public_repos;
+
     @SerializedName("public_gists")
+    @Expose
     int public_gists;
+
     @SerializedName("followers")
+    @Expose
     int followers;
+
     @SerializedName("following")
+    @Expose
     int following;
 
     public void setUsername(String username){

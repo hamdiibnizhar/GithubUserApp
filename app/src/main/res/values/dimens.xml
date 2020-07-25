@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detail_text_layout_height">37dp</dimen>
+    <dimen name="detail_photo_size">80dp</dimen>
+    <dimen name="detail_text_size">10.5sp</dimen>
+    <dimen name="text_info_layout_width">58dp</dimen>
+</resources>

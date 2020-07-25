@@ -16,22 +16,17 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
-public class ListUsersAdapter extends RecyclerView.Adapter<ListUsersAdapter.ListViewHolder>{
+public class FollowingUserAdapter extends RecyclerView.Adapter<FollowingUserAdapter.ListViewHolder>{
     private ArrayList<User> listUser;
 
-    public ListUsersAdapter(ArrayList<User> list) {
+    public FollowingUserAdapter(ArrayList<User> list) {
         this.listUser = list;
-    }
-
-    private OnItemClickCallback onItemClickCallback;
-    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback;
     }
 
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.user_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.following_item, parent, false);
         return new ListViewHolder(view);
     }
 
@@ -43,13 +38,6 @@ public class ListUsersAdapter extends RecyclerView.Adapter<ListUsersAdapter.List
                 .apply(new RequestOptions().override(45, 45))
                 .into(holder.imgPhoto);
         holder.tvName.setText(user.getUsername());
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onItemClickCallback.onItemClicked(listUser.get(holder.getAdapterPosition()));
-            }
-        });
     }
 
     @Override
@@ -65,9 +53,5 @@ public class ListUsersAdapter extends RecyclerView.Adapter<ListUsersAdapter.List
             imgPhoto = itemView.findViewById(R.id.avatar);
             tvName = itemView.findViewById(R.id.username);
         }
-    }
-
-    public interface OnItemClickCallback {
-        void onItemClicked(User data);
     }
 }
