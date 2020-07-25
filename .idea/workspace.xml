@@ -13,54 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="656e78b2-8fa3-4b27-b292-120730721539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/DetailSelectedActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FollowersUserAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FollowingUserAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/SectionsPagerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/FollowerFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/FollowingFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_selected.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/followers_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/following_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_follower.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_following.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/SearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/ListUsersAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/ListUsersAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/models/DetailUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/models/DetailUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/rest/DetailUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/rest/DetailUserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/rest/FollowerUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/rest/FollowerUserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/rest/FollowingUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/rest/FollowingUserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +65,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -223,29 +176,33 @@
     </state>
     <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595223123190" />
     <state x="370" y="169" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595676583843" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom" timestamp="1595675676453">
+    <state x="740" y="246" key="FileChooserDialogImpl" timestamp="1595683361782">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="246" key="FileChooserDialogImpl/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595683361782" />
+    <state width="1877" height="156" key="GridCell.Tab.0.bottom" timestamp="1595683267794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595260130949" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595675676453" />
+    <state width="1877" height="156" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595683267794" />
     <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196731" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center" timestamp="1595675676432">
+    <state width="1877" height="156" key="GridCell.Tab.0.center" timestamp="1595683267793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595260130949" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595675676432" />
+    <state width="1877" height="156" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595683267793" />
     <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196730" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left" timestamp="1595675676432">
+    <state width="1877" height="156" key="GridCell.Tab.0.left" timestamp="1595683267747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595260130948" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595675676432" />
+    <state width="1877" height="156" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595683267746" />
     <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196730" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right" timestamp="1595675676453">
+    <state width="1877" height="156" key="GridCell.Tab.0.right" timestamp="1595683267793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595260130949" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595675676453" />
+    <state width="1877" height="156" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595683267793" />
     <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196731" />
     <state x="657" y="253" width="606" height="534" key="find.popup" timestamp="1595678724559">
       <screen x="0" y="0" width="1920" height="1040" />
