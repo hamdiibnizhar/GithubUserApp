@@ -12,6 +12,8 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 //import java method
+import com.azhariharisalhamdi.githubuserapp.models.User;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;

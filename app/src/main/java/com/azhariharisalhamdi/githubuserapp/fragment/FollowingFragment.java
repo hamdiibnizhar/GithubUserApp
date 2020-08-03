@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.azhariharisalhamdi.githubuserapp.DetailSelectedActivity;
 import com.azhariharisalhamdi.githubuserapp.R;
-import com.azhariharisalhamdi.githubuserapp.User;
+import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.adapter.FollowingUserAdapter;
 import com.azhariharisalhamdi.githubuserapp.models.FollowingUsers;
 import com.azhariharisalhamdi.githubuserapp.rest.BaseApiClient;

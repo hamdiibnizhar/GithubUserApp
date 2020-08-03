@@ -4,6 +4,8 @@
     <string name="main_activity_label">Daftar Pengguna</string>
     <string name="search_activity_label">Cari Pengguna</string>
     <string name="detail_activity_label">Detail Pengguna</string>
+    <string name="setting_activity_label">Pengaturan</string>
+    <string name="reminder_set">Atur Pengingat</string>
     <string name="search_hint">Cari Nama Pengguna Github</string>
     <string name="github_user">Pengguna Github</string>
 
@@ -17,6 +19,33 @@
 
     <string name="tab_1_title">Pengikut</string>
     <string name="tab_2_title">Mengikuti</string>
+    <string name="follower_fav_list_col">pengikut :</string>
+    <string name="following_fav_list_col">mengikuti :</string>
+    <string name="success_store_user">Berhasil ditandai favorite</string>
+    <string name="success_delete_user">Berhasil membatalkan favorit</string>
+    <string name="fail_change_db">Fail to update data</string>
 
     <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+
+    <string name="one_time_alarm">Alarm Tunggal</string>
+    <string name="alarm_date">Tanggal Alarm</string>
+    <string name="set_one_time_alarm">Atur Alarm Tunggal</string>
+    <string name="alarm_message">Pesan Alarm</string>
+    <string name="repeating_alarm">Alarm Berulang</string>
+    <string name="set_repeating_alarm">Atur Alarm Berulang</string>
+    <string name="cancel_alarm">Batalkan Alarm</string>
+    <string name="alarm_time">Waktu Alarm</string>
+
+    <string name="notif_content_title">Github App</string>
+    <string name="notif_content_text">Ayo temukan pengguna populer di Github</string>
+    <string name="notif_subtext">Sub text</string>
+
+    <string name="alarm_one_time_toast">Alarm tunggal telah diatur</string>
+    <string name="alarm_repeat_toast">Alarm berulang telah diatur</string>
+    <string name="alarm_cancel_one_time_toast">Alarm tunggal dibatalkan</string>
+    <string name="alarm_cancel_repeat_toast">Alarm berulang dibatalkan</string>
+
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="auto_reminder">Pengingat Otomatis pada </string>
+    <string name="set_reminder">Atur Pengingat Manual</string>
 </resources>

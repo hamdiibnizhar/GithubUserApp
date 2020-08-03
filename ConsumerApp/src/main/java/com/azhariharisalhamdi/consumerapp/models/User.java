@@ -1,4 +1,4 @@
-package com.azhariharisalhamdi.githubuserapp;
+package com.azhariharisalhamdi.consumerapp.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -16,6 +16,7 @@ public class User implements Parcelable {
     private int public_gists;
     private int followers;
     private int following;
+    private int id;
 
     public User(){}
 
@@ -29,6 +30,14 @@ public class User implements Parcelable {
         this.blog = blog;
         this.public_repo = public_repo;
         this.public_gists = public_gists;
+        this.followers = followers;
+        this.following = Following;
+    }
+
+    public User(int id, String UserName, String Avatar, int followers, int Following){
+        this.id = id;
+        this.username = UserName;
+        this.avatar = Avatar;
         this.followers = followers;
         this.following = Following;
     }
@@ -110,6 +119,13 @@ public class User implements Parcelable {
         return following;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
+
     protected User(Parcel in) {
         username = in.readString();
         name = in.readString();
@@ -122,6 +138,7 @@ public class User implements Parcelable {
         public_gists = in.readInt();
         followers = in.readInt();
         following = in.readInt();
+        id = in.readInt();
     }
     @Override
     public void writeToParcel(Parcel dest, int flags) {
@@ -136,11 +153,14 @@ public class User implements Parcelable {
         dest.writeInt(public_gists);
         dest.writeInt(followers);
         dest.writeInt(following);
+        dest.writeInt(id);
     }
+
     @Override
     public int describeContents() {
         return 0;
     }
+
     public static final Creator<User> CREATOR = new Creator<User>() {
         @Override
         public User createFromParcel(Parcel in) {

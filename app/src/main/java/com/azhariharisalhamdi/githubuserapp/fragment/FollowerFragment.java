@@ -12,18 +12,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.azhariharisalhamdi.githubuserapp.DetailSelectedActivity;
 import com.azhariharisalhamdi.githubuserapp.R;
-import com.azhariharisalhamdi.githubuserapp.User;
+import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.adapter.FollowersUserAdapter;
-import com.azhariharisalhamdi.githubuserapp.adapter.ListUsersAdapter;
-import com.azhariharisalhamdi.githubuserapp.models.DetailUsers;
 import com.azhariharisalhamdi.githubuserapp.models.FollowerUsers;
 import com.azhariharisalhamdi.githubuserapp.rest.BaseApiClient;
-import com.azhariharisalhamdi.githubuserapp.rest.DetailUserApi;
 import com.azhariharisalhamdi.githubuserapp.rest.FollowerUserApi;
 
 import java.util.ArrayList;

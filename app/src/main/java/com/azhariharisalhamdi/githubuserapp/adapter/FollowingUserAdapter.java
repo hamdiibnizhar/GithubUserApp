@@ -1,5 +1,6 @@
 package com.azhariharisalhamdi.githubuserapp.adapter;
 
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.azhariharisalhamdi.githubuserapp.R;
-import com.azhariharisalhamdi.githubuserapp.User;
+import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
@@ -33,9 +34,13 @@ public class FollowingUserAdapter extends RecyclerView.Adapter<FollowingUserAdap
     @Override
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
         User user = listUser.get(position);
+//        int height = (int) Resources.getSystem().getDimension(R.dimen.avatar_size);
+//        int width = (int) Resources.getSystem().getDimension(R.dimen.avatar_size);
+        int height = 45;
+        int width = 45;
         Glide.with(holder.itemView.getContext())
                 .load(user.getAvatar())
-                .apply(new RequestOptions().override(45, 45))
+                .apply(new RequestOptions().override(height, width))
                 .into(holder.imgPhoto);
         holder.tvName.setText(user.getUsername());
     }

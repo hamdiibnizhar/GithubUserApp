@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.azhariharisalhamdi.githubuserapp.models.User;
+
 public class detail_activity extends AppCompatActivity {
     public static final String USER_DATA_DETAIL = "user_data_detail";
 
