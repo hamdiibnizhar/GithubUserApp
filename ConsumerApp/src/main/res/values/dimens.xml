@@ -4,5 +4,4 @@
     <dimen name="detail_photo_size">80dp</dimen>
     <dimen name="detail_text_size">10.5sp</dimen>
     <dimen name="text_info_layout_width">58dp</dimen>
-    <dimen name="avatar_size">45</dimen>
 </resources>

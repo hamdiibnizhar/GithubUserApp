@@ -1,22 +1,21 @@
 package com.azhariharisalhamdi.githubuserapp.fragment;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.azhariharisalhamdi.githubuserapp.DetailSelectedActivity;
 import com.azhariharisalhamdi.githubuserapp.R;
-import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.adapter.FollowingUserAdapter;
 import com.azhariharisalhamdi.githubuserapp.models.FollowingUsers;
+import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.rest.BaseApiClient;
 import com.azhariharisalhamdi.githubuserapp.rest.FollowingUserApi;
 
@@ -44,18 +43,8 @@ public class FollowingFragment extends Fragment {
     private RecyclerView recyclerViewUser;
 
     public FollowingFragment() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FollowingFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static FollowingFragment newInstance(String param1, String param2) {
         FollowingFragment fragment = new FollowingFragment();
         Bundle args = new Bundle();

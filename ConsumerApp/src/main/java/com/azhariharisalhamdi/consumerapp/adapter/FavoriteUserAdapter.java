@@ -2,6 +2,7 @@ package com.azhariharisalhamdi.consumerapp.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -72,10 +73,9 @@ public class FavoriteUserAdapter extends RecyclerView.Adapter<FavoriteUserAdapte
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         holder.usernameTv.setText(listUser.get(position).getUsername());
-//        int height = (int) Resources.getSystem().getDimension(R.dimen.avatar_size);
-//        int width = (int) Resources.getSystem().getDimension(R.dimen.avatar_size);
-        int height = 45;
-        int width = 45;
+        Resources res = holder.itemView.getContext().getResources();
+        int height = res.getInteger(R.integer.avatar_size);
+        int width = res.getInteger(R.integer.avatar_size);
         Glide.with(holder.itemView.getContext())
                 .load(listUser.get(position).getAvatar())
                 .apply(new RequestOptions().override(height, width))
@@ -87,13 +87,8 @@ public class FavoriteUserAdapter extends RecyclerView.Adapter<FavoriteUserAdapte
         holder.userCard.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
             @Override
             public void onItemClicked(View view, int position) {
-//                Intent intent = new Intent(activity, DetailSelectedActivity.class);
-//                intent.putExtra(DetailSelectedActivity.EXTRA_POSITION, position);
-//                intent.putExtra(DetailSelectedActivity.EXTRA_USER, listUser.get(position));
-//                activity.startActivityForResult(intent, DetailSelectedActivity.REQUEST_UPDATE);
-
                 Intent moveWithObjectIntent = new Intent(activity, DetailSelectedActivity.class);
-                moveWithObjectIntent.putExtra(DetailSelectedActivity.USER_DATA_DETAIL, listUser.get(position));
+                moveWithObjectIntent.putExtra(DetailSelectedActivity.USER_DATA_DETAIL_FAVORITE, listUser.get(position));
                 activity.startActivity(moveWithObjectIntent);
             }
         }));

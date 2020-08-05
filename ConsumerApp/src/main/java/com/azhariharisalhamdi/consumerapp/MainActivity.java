@@ -23,9 +23,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-//import android utils
-//import java method
-//import json method
 
 public class MainActivity extends AppCompatActivity {
 

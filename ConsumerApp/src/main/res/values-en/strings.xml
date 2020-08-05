@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ConsumerApp</string>
-    <string name="main_activity_label">Consumer List User</string>
-    <string name="search_activity_label">Consumer Search User</string>
-    <string name="detail_activity_label">Consumer Detail User</string>
-    <string name="setting_activity_label">Consumer Settings</string>
-    <string name="reminder_set">Consumer Set Reminder</string>
-
+    <string name="main_activity_label">List User</string>
+    <string name="search_activity_label">Search User</string>
+    <string name="detail_activity_label">Detail User</string>
+    <string name="setting_activity_label">Settings</string>
+    <string name="reminder_set">Set Reminder</string>
     <string name="search_hint">Search Github User</string>
     <string name="github_user">Github users</string>
 
+    <string name="user_name_detail">%s\n(%s)</string>
+    <string name="user_name_only_detail">%s</string>
     <string name="detail_username_name">Username\n(Name)</string>
     <string name="company_col">Company</string>
     <string name="location_col">Location</string>
@@ -25,6 +26,7 @@
     <string name="success_store_user">Success to favorite</string>
     <string name="success_delete_user">Success to unfavorite</string>
     <string name="fail_change_db">Fail to update data</string>
+    <string name="no_data_saved">No Data Recorded Right Now</string>
 
     <string name="change_language_settings">Change Language Settings</string>
 
@@ -37,9 +39,9 @@
     <string name="cancel_alarm">Canceling Alarm</string>
     <string name="alarm_time">Time Alarm</string>
 
-    <string name="notif_content_title">Github App</string>
+    <string name="notif_content_title">Consumer App</string>
     <string name="notif_content_text">Let\'s find user popular star on Github</string>
-    <string name="notif_subtext">Sub text</string>
+    <string name="notif_subtext">reminder</string>
 
     <string name="alarm_one_time_toast">One time alarm set up</string>
     <string name="alarm_repeat_toast">Repeating alarm set up</string>
@@ -47,6 +49,6 @@
     <string name="alarm_cancel_repeat_toast">Repeating Alarm canceled</string>
 
     <string name="change_language">Change The Language</string>
-    <string name="auto_reminder">Reminder Automatically at </string>
+    <string name="auto_reminder">Auto Reminder at %s %s</string>
     <string name="set_reminder">Set Reminder Manually</string>
 </resources>

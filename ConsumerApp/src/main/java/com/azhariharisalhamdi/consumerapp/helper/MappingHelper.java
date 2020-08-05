@@ -24,4 +24,23 @@ public class MappingHelper {
 
         return UserList;
     }
+
+    public static User mapCursorToObject(Cursor userCursor) {
+        userCursor.moveToFirst();
+        int id = userCursor.getInt(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns._ID));
+        String username = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.USERNAME));
+        String avatar_url = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.AVATAR_URL));
+        String follower = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.FOLLOWER));
+        String following = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.FOLLOWING));
+        return new User(id, username, avatar_url, Integer.parseInt(follower), Integer.parseInt(following));
+    }
+
+    public static User mapCursorToObjectNoID(Cursor userCursor) {
+        userCursor.moveToFirst();
+        String username = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.USERNAME));
+        String avatar_url = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.AVATAR_URL));
+        String follower = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.FOLLOWER));
+        String following = userCursor.getString(userCursor.getColumnIndexOrThrow(DatabaseContract.UserColumns.FOLLOWING));
+        return new User(username, avatar_url, Integer.parseInt(follower), Integer.parseInt(following));
+    }
 }

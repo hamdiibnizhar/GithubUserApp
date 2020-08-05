@@ -34,7 +34,6 @@ public class FollowerFragment extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -44,18 +43,8 @@ public class FollowerFragment extends Fragment {
     private RecyclerView recyclerViewUser;
 
     public FollowerFragment() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FollowerFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static FollowerFragment newInstance(String param1, String param2) {
         FollowerFragment fragment = new FollowerFragment();
         Bundle args = new Bundle();
@@ -86,7 +75,6 @@ public class FollowerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View RootView =  inflater.inflate(R.layout.fragment_follower, container, false);
 
         recyclerViewUser = RootView.findViewById(R.id.followerRecyclerViewUser);
@@ -98,12 +86,6 @@ public class FollowerFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        final TextView textView = view.findViewById(R.id.section_label);
-//        int index = 1;
-//        if (getArguments() != null) {
-//            index = getArguments().getInt(ARG_SECTION_NUMBER);
-//        }
-//        textView.setText(getString(R.string.content_tab_text) + " " + index);
     }
 
     public void getDetailUser_Async(String username){

@@ -42,6 +42,13 @@ public class User implements Parcelable {
         this.following = Following;
     }
 
+    public User(String UserName, String Avatar, int followers, int Following){
+        this.username = UserName;
+        this.avatar = Avatar;
+        this.followers = followers;
+        this.following = Following;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }

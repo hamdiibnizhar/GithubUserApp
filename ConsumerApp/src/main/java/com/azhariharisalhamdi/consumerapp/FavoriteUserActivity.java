@@ -1,9 +1,13 @@
 package com.azhariharisalhamdi.consumerapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.ContentObserver;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.azhariharisalhamdi.consumerapp.adapter.FavoriteUserAdapter;
-import com.azhariharisalhamdi.consumerapp.database.UserHelper;
+import com.azhariharisalhamdi.consumerapp.database.DatabaseContract;
 import com.azhariharisalhamdi.consumerapp.helper.MappingHelper;
 import com.azhariharisalhamdi.consumerapp.models.User;
 import com.azhariharisalhamdi.consumerapp.settings.SettingsActivity;
@@ -38,7 +42,6 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
     private ProgressBar progressBar;
     private RecyclerView rvFavoriteUsers;
     private FavoriteUserAdapter adapter;
-    private UserHelper userHelper;
     private static final String EXTRA_STATE = "EXTRA_STATE";
 
     @Override
@@ -57,11 +60,14 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
         adapter = new FavoriteUserAdapter(this);
         rvFavoriteUsers.setAdapter(adapter);
 
-        userHelper = UserHelper.getInstance(getApplicationContext());
-        userHelper.open();
+        HandlerThread handlerThread = new HandlerThread("DataObserver");
+        handlerThread.start();
+        Handler handler = new Handler(handlerThread.getLooper());
+        DataObserver dataObserver = new DataObserver(handler, this);
+        getContentResolver().registerContentObserver(DatabaseContract.UserColumns.CONTENT_URI, true, dataObserver);
 
         if (savedInstanceState == null) {
-            new LoadUserListAsync(userHelper, (LoadUserCallback) this).execute();
+            new LoadUserListAsync(this, (LoadUserCallback) this).execute();
         } else {
             ArrayList<User> list = savedInstanceState.getParcelableArrayList(EXTRA_STATE);
             if (list != null) {
@@ -77,12 +83,6 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        userHelper.close();
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.other_menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -91,7 +91,6 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_change_settings) {
-//            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
             Intent mIntent = new Intent(FavoriteUserActivity.this, SettingsActivity.class);
             startActivity(mIntent);
         }
@@ -115,17 +114,17 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
             adapter.setListUsers(users);
         } else {
             adapter.setListUsers(new ArrayList<User>());
-            showSnackbarMessage("Tidak ada data saat ini");
+            showSnackbarMessage(getResources().getString(R.string.no_data_saved));
         }
     }
 
     private static class LoadUserListAsync extends AsyncTask<Void, Void, ArrayList<User>> {
 
-        private final WeakReference<UserHelper> weakUserHelper;
+        private final WeakReference<Context> weakContext;
         private final WeakReference<LoadUserCallback> weakCallback;
 
-        private LoadUserListAsync(UserHelper UserHelper, LoadUserCallback callback) {
-            weakUserHelper = new WeakReference<>(UserHelper);
+        private LoadUserListAsync(Context context, LoadUserCallback callback) {
+            weakContext = new WeakReference<>(context);
             weakCallback = new WeakReference<>(callback);
         }
 
@@ -137,14 +136,14 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
 
         @Override
         protected ArrayList<User> doInBackground(Void... voids) {
-            Cursor dataCursor = weakUserHelper.get().queryAll();
+            Context context = weakContext.get();
+            Cursor dataCursor = context.getContentResolver().query(DatabaseContract.UserColumns.CONTENT_URI, null, null, null, null);
             return MappingHelper.mapCursorToArrayList(dataCursor);
         }
 
         @Override
         protected void onPostExecute(ArrayList<User> users) {
             super.onPostExecute(users);
-
             weakCallback.get().postExecute(users);
 
         }
@@ -189,6 +188,19 @@ public class FavoriteUserActivity extends AppCompatActivity implements LoadUserC
 
     private void showSnackbarMessage(String message) {
         Snackbar.make(rvFavoriteUsers, message, Snackbar.LENGTH_SHORT).show();
+    }
+
+    public static class DataObserver extends ContentObserver {
+        final Context context;
+        public DataObserver(Handler handler, Context context) {
+            super(handler);
+            this.context = context;
+        }
+        @Override
+        public void onChange(boolean selfChange) {
+            super.onChange(selfChange);
+            new LoadUserListAsync(context, (LoadUserCallback) context).execute();
+        }
     }
 }
 

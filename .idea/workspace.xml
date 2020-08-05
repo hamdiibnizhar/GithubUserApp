@@ -6,299 +6,73 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fatal" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fata" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="656e78b2-8fa3-4b27-b292-120730721539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_concurrent_concurrent_futures_1_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_2_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_guava_2_2_5_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_migration_2_2_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_2_5_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_rxjava2_2_2_5_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_testing_2_2_5_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_2_9_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_41_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_41_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ConsumerApp/ConsumerApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/androidTest/java/com/azhariharisalhamdi/consumerapp/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/DetailSelectedActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/FavoriteUserActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/SearchActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FavoriteUserAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FollowersUserAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FollowingUserAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/ListUsersAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/SectionsPagerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/callback/CustomOnItemClickListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/DatabaseContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/DatabaseHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/UserHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/detail_activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/DatePickerFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/FollowerFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/FollowingFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/TimePickerFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/helper/MappingHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/DetailUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/FollowerUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/FollowingUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/notification/AlarmReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/rest/BaseApiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/rest/DetailUserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/rest/FollowerUserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/rest/FollowingUserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/rest/UsersApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/NotificationActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/ReminderSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/SettingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_person_search_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_person_search_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_person_search_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/outline_person_search_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_person_search_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_person_search_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_person_search_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/outline_person_search_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/user9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_person_search_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_person_search_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_person_search_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/outline_person_search_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_person_search_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_person_search_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_person_search_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/outline_person_search_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_person_search_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_person_search_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_person_search_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/outline_person_search_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/baseline_settings_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/circle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/ic_access_time_black.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/ic_date_range_black.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/ic_notifications_white_48px.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/imgcircle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/outline_favorite_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/outline_favorite_border_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/outline_person_search_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/rectangle_crop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/shape_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/shape_round_transparent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/user9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_detail_selected.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_favorite_user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/alarm_receiver.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/detail_activity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/favorite_user_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/followers_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/following_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/fragment_follower.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/fragment_following.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/item_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/list_items.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/user_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/menu/main_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/menu/other_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values-in/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/FavoriteUserActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FavoriteUserAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/callback/CustomOnItemClickListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/DatabaseContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/DatabaseHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/UserHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/DatePickerFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/TimePickerFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/helper/MappingHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/notification/AlarmReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/NotificationActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/ReminderSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/SettingsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/baseline_settings_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/baseline_settings_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/baseline_settings_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/baseline_settings_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/outline_favorite_border_black_48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_settings_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_access_time_black.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_date_range_black.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_white_48px.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/outline_favorite_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/outline_favorite_border_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorite_user.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/alarm_receiver.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/favorite_user_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/other_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-hdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-mdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-v24/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xhdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxhdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable-xxxhdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/drawable/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-anydpi-v26/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-anydpi-v26/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-hdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-hdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-hdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-hdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-mdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-mdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-mdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-mdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xhdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xhdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xhdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xhdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxhdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxhdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxhdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxhdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxxhdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxxhdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxxhdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/mipmap-xxxhdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/integers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/provider/UserDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/find_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/github_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/github_icon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/github_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/github_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/integers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -310,31 +84,54 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ConsumerApp/ConsumerApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ConsumerApp/ConsumerApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/DetailSelectedActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/DetailSelectedActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/FavoriteUserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/FavoriteUserActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/SearchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FavoriteUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FavoriteUserAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FollowersUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FollowersUserAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FollowingUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/FollowingUserAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/ListUsersAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/adapter/ListUsersAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/DatabaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/DatabaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/DatabaseHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/database/UserHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/FollowerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/FollowerFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/FollowingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/fragment/FollowingFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/helper/MappingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/helper/MappingHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/NotificationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/NotificationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp/settings/SettingsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/layout/activity_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/res/values-in/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values-in/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerApp/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/DetailSelectedActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/DetailSelectedActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/FavoriteUserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/FavoriteUserActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/SearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FavoriteUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FavoriteUserAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FollowersUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FollowersUserAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FollowingUserAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/FollowingUserAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/ListUsersAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/adapter/ListUsersAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/detail_activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/detail_activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/DatabaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/DatabaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/database/UserHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/FollowerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/FollowerFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/FollowingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/fragment/FollowingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_selected.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_selected.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/helper/MappingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/helper/MappingHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/NotificationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/NotificationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/azhariharisalhamdi/githubuserapp/settings/SettingsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,6 +145,7 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="PLEGAR1781006229" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -360,14 +158,17 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="GithubUserApp" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="resourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -390,7 +191,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-03T08:20:37.426Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ConsumerApp/src/main/java/com/azhariharisalhamdi/consumerapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -415,8 +216,8 @@
       <recent name="com.azhariharisalhamdi.githubuserapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Projects\Android\GithubUserApp\ConsumerApp\src\main\java\com\azhariharisalhamdi\consumerapp" />
       <recent name="F:\Projects\Android\GithubUserApp\ConsumerApp\src\main\res" />
+      <recent name="F:\Projects\Android\GithubUserApp\ConsumerApp\src\main\java\com\azhariharisalhamdi\consumerapp" />
       <recent name="F:\Projects\Android\GithubUserApp\app\src\main\res\menu" />
       <recent name="F:\Projects\Android\GithubUserApp\app\src\main\res\layout" />
     </key>
@@ -429,7 +230,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerApp" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="ConsumerApp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="ConsumerApp" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -549,10 +350,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Notifications" timestamp="1595249834727">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="387" y="31" key="#Notifications" timestamp="1596544615549">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1595249834727" />
+    <state x="387" y="31" key="#Notifications/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596544615549" />
+    <state x="2195" y="605" key="#Notifications/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596535457195" />
     <state x="477" y="251" key="#PSD" timestamp="1596470288429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -570,48 +373,56 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1595676518297" />
-    <state x="370" y="169" key="AndroidCreateResourceFileDialog" timestamp="1596453784011">
+    <state x="370" y="169" key="AndroidCreateResourceFileDialog" timestamp="1596588745073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1595223123190" />
-    <state x="370" y="169" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596453784011" />
+    <state x="370" y="169" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596588745073" />
     <state x="2183" y="701" key="AndroidCreateResourceFileDialog/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595944969834" />
-    <state x="740" y="246" key="FileChooserDialogImpl" timestamp="1596460874858">
+    <state x="740" y="246" key="FileChooserDialogImpl" timestamp="1596605922284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="246" key="FileChooserDialogImpl/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596460874858" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom" timestamp="1596466268922">
+    <state x="740" y="246" key="FileChooserDialogImpl/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596605922284" />
+    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1596604515139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595260130949" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596466268922" />
-    <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196731" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center" timestamp="1596466268921">
+    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596604515139" />
+    <state width="1323" height="72" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596535875271" />
+    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1596604515139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595260130949" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596466268921" />
-    <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196730" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left" timestamp="1596466268921">
+    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596604515139" />
+    <state width="1323" height="72" key="GridCell.Tab.0.center/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596535875271" />
+    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1596604515139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595260130948" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596466268921" />
-    <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196730" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right" timestamp="1596466268922">
+    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596604515139" />
+    <state width="1323" height="72" key="GridCell.Tab.0.left/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596535875270" />
+    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1596604515139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595260130949" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596466268922" />
-    <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1595667196731" />
+    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596604515139" />
+    <state width="1323" height="72" key="GridCell.Tab.0.right/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596535875271" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1596447746718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596447746718" />
-    <state x="657" y="253" width="736" height="602" key="find.popup" timestamp="1596468011776">
+    <state x="2392" y="863" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596533828534">
+      <screen x="1920" y="583" width="1366" height="728" />
+    </state>
+    <state x="2392" y="863" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596533828534" />
+    <state x="657" y="253" width="736" height="602" key="find.popup" timestamp="1596595027138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="657" y="253" width="736" height="602" key="find.popup/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596468011776" />
+    <state x="657" y="253" width="736" height="602" key="find.popup/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596595027138" />
     <state x="2387" y="760" width="606" height="534" key="find.popup/0.0.1920.1040/1920.583.1366.728@1920.583.1366.728" timestamp="1596327815145" />
+    <state x="702" y="148" key="refactoring.ChangeSignatureDialog" timestamp="1596478587856">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="148" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.583.1366.728@0.0.1920.1040" timestamp="1596478587856" />
   </component>
 </project>

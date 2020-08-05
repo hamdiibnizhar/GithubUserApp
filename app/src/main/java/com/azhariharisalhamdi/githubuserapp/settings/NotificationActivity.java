@@ -48,7 +48,6 @@ public class NotificationActivity extends AppCompatActivity {
         */
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
-            /* Create or update. */
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
 
             mBuilder.setChannelId(CHANNEL_ID);

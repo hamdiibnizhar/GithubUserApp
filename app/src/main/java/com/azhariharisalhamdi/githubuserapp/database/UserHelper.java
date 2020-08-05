@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.io.File;
 
 import static android.provider.MediaStore.Audio.Playlists.Members._ID;
-import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.TABLE_NAME;
+import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.TABLE_NAME;
 import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.USERNAME;
 
 public class UserHelper {
@@ -67,6 +67,17 @@ public class UserHelper {
                 , null);
     }
 
+    public Cursor queryByUsername(String username) {
+        return database.query(DATABASE_TABLE
+                ,null
+                , USERNAME + " = ?"
+                , new String[]{username}
+                , null
+                , null
+                , null
+                , null);
+    }
+
     public long insert(ContentValues values) {
         return database.insert(DATABASE_TABLE, null, values);
     }
@@ -84,32 +95,17 @@ public class UserHelper {
     }
 
     public boolean isUserFavorited(String value) {
-//        SQLiteDatabase db = getWritableDatabase();
         String selectString = "SELECT * FROM " + DATABASE_TABLE + " WHERE " + USERNAME + " =?";
-
-        // Add the String you are searching by here.
-        // Put it in an array to avoid an unrecognized token error
         Cursor cursor = database.rawQuery(selectString, new String[] {value});
-
         boolean hasObject = false;
         if(cursor.moveToFirst()){
             hasObject = true;
-
-            //region if you had multiple records to check for, use this region.
-
             int count = 0;
             while(cursor.moveToNext()){
                 count++;
             }
-            //here, count is records found
-//            Log.d(TAG, String.format("%d records found", count));
-
-            //endregion
-
         }
-
-        cursor.close();          // Dont forget to close your cursor
-//        database.close();              //AND your Database!
+        cursor.close();
         return hasObject;
     }
 

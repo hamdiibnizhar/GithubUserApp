@@ -1,5 +1,6 @@
 package com.azhariharisalhamdi.consumerapp.adapter;
 
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,10 +34,9 @@ public class FollowersUserAdapter extends RecyclerView.Adapter<FollowersUserAdap
     @Override
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
         User user = listUser.get(position);
-//        int height = (int) Resources.getSystem().getDimension(R.dimen.avatar_size);
-//        int width = (int) Resources.getSystem().getDimension(R.dimen.avatar_size);
-        int height = 45;
-        int width = 45;
+        Resources res = holder.itemView.getContext().getResources();
+        int height = res.getInteger(R.integer.avatar_size);
+        int width = res.getInteger(R.integer.avatar_size);
         Glide.with(holder.itemView.getContext())
                 .load(user.getAvatar())
                 .apply(new RequestOptions().override(height, width))

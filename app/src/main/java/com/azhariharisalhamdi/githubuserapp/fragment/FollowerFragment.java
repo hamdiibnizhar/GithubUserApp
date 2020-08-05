@@ -1,6 +1,11 @@
 package com.azhariharisalhamdi.githubuserapp.fragment;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,17 +13,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
-
 import com.azhariharisalhamdi.githubuserapp.DetailSelectedActivity;
 import com.azhariharisalhamdi.githubuserapp.R;
-import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.adapter.FollowersUserAdapter;
 import com.azhariharisalhamdi.githubuserapp.models.FollowerUsers;
+import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.rest.BaseApiClient;
 import com.azhariharisalhamdi.githubuserapp.rest.FollowerUserApi;
 
@@ -35,7 +34,6 @@ public class FollowerFragment extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -45,18 +43,8 @@ public class FollowerFragment extends Fragment {
     private RecyclerView recyclerViewUser;
 
     public FollowerFragment() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FollowerFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static FollowerFragment newInstance(String param1, String param2) {
         FollowerFragment fragment = new FollowerFragment();
         Bundle args = new Bundle();

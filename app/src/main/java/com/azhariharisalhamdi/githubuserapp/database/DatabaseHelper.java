@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL)",
-            DatabaseContract.TABLE_NAME,
+            DatabaseContract.UserColumns.TABLE_NAME,
             DatabaseContract.UserColumns._ID,
             DatabaseContract.UserColumns.USERNAME,
             DatabaseContract.UserColumns.AVATAR_URL,
@@ -35,7 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + DatabaseContract.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + DatabaseContract.UserColumns.TABLE_NAME);
         onCreate(db);
     }
 }

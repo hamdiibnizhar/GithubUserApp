@@ -2,6 +2,8 @@ package com.azhariharisalhamdi.githubuserapp;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,12 +19,12 @@ import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import com.azhariharisalhamdi.githubuserapp.adapter.SectionsPagerAdapter;
+import com.azhariharisalhamdi.githubuserapp.database.DatabaseContract;
 import com.azhariharisalhamdi.githubuserapp.database.UserHelper;
 import com.azhariharisalhamdi.githubuserapp.models.DetailUsers;
 import com.azhariharisalhamdi.githubuserapp.models.User;
 import com.azhariharisalhamdi.githubuserapp.rest.BaseApiClient;
 import com.azhariharisalhamdi.githubuserapp.rest.DetailUserApi;
-
 import com.azhariharisalhamdi.githubuserapp.settings.SettingsActivity;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -37,14 +39,15 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.AVATAR_URL;
+import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.CONTENT_URI;
 import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.FOLLOWER;
 import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.FOLLOWING;
+import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.TABLE_NAME;
 import static com.azhariharisalhamdi.githubuserapp.database.DatabaseContract.UserColumns.USERNAME;
-import static com.azhariharisalhamdi.githubuserapp.database.DatabaseHelper.DATABASE_NAME;
 
 public class DetailSelectedActivity extends AppCompatActivity {
-    public static final String USER_DATA_DETAIL = "user_data_detail";
-
+    public static final String USER_DATA_DETAIL_SEARCH = "user_data_detail_search";
+    public static final String USER_DATA_DETAIL_FAVORITE = "user_data_detail_favorite";
     String TAG = "detail_user";
     DetailUserApi detailApi;
     ImageView mImageView;
@@ -57,9 +60,11 @@ public class DetailSelectedActivity extends AppCompatActivity {
     private SectionsPagerAdapter sectionsPagerAdapter;
     private ViewPager viewPager;
     private UserHelper userHelper;
-    private User user_data;
+    private User userData;
     private int position;
     private boolean has_favorited = false;
+    private boolean from_favorite = false;
+    private Uri uriPath;
 
     private boolean isFavorited = false;
 
@@ -91,41 +96,42 @@ public class DetailSelectedActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         favButton = findViewById(R.id.floatingActionButton);
 
-        userHelper = UserHelper.getInstance(getApplicationContext());
-        userHelper.open();
-//        user_data = getIntent().getParcelableExtra(EXTRA_USER);
-//
-//        if (user_data != null) {
-//            position = getIntent().getIntExtra(EXTRA_POSITION, 0);
-//            isFavorited = true;
-//        } else {
-//            user_data = new User();
-//        }
-
         //get parcel data intent
-        received = getIntent().getParcelableExtra(USER_DATA_DETAIL);
-        if(received != null) progressBar.setVisibility(View.VISIBLE);
-        assert received != null;
-        Log.d(TAG, "oncreate, Username : "+received.getUsername());
+        if(getIntent().getParcelableExtra(USER_DATA_DETAIL_SEARCH) != null){
+            received = getIntent().getParcelableExtra(USER_DATA_DETAIL_SEARCH);
+            from_favorite = false;
+        }else{
+            received = getIntent().getParcelableExtra(USER_DATA_DETAIL_FAVORITE);
+            from_favorite = true;
+        }
 
-        if(userHelper.doesDatabaseExist(this, DATABASE_NAME)) {
-            Log.d(TAG, "database exist");
-            isFavorited = userHelper.isUserFavorited(received.getUsername());
+        if(received != null) {
+            progressBar.setVisibility(View.VISIBLE);
+            favButton.setVisibility(View.INVISIBLE);
+        }
+        Log.d(TAG, "oncreate, Username : "+received.getUsername());
+        String lastpath = ""+received.getId();
+        if (CONTENT_URI != null) {
+            String[] projections = {
+                    DatabaseContract.UserColumns._ID,
+                    DatabaseContract.UserColumns.USERNAME,
+                    DatabaseContract.UserColumns.AVATAR_URL,
+                    DatabaseContract.UserColumns.FOLLOWER,
+                    DatabaseContract.UserColumns.FOLLOWING
+            };
+            String username_string = "SELECT * FROM " + TABLE_NAME + " WHERE " + USERNAME + " =?";
+//            Cursor cursor = getContentResolver().query(uriPath, projections, username_string, new String[]{lastpath}, null);
+            isFavorited = isUserFavorited(received.getUsername());
             if (isFavorited) {
+                isFavorited = true;
                 favButton.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.outline_favorite_24));
                 Log.d(TAG, "user's favorited");
-            } else {
+            }else{
+                isFavorited = false;
                 favButton.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.outline_favorite_border_24));
                 Log.d(TAG, "user's not favorited");
             }
-        }else{
-            Log.d(TAG, "database not exist");
-            favButton.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.outline_favorite_border_24));
-            isFavorited = false;
         }
-
-        userHelper.close();
-
         getDetailUser_Async(received.getUsername());
 
         sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
@@ -143,38 +149,39 @@ public class DetailSelectedActivity extends AppCompatActivity {
                     Log.d(TAG, "user's not to be favorited");
                     favButton.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.outline_favorite_border_24));
                     isFavorited = false;
-                    userHelper.open();
-                    deteleUserData(temp_user);
-                    userHelper.close();
+                    deteleUserData(uriPath, temp_user);
                 }else{
                     Log.d(TAG, "user's to be favorited");
                     favButton.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.outline_favorite_24));
                     isFavorited = true;
-                    userHelper.open();
                     storeUserData(temp_user);
-                    userHelper.close();
                 }
             }
         });
     }
 
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//        userHelper.close();
-//    }
-//
-//    @Override
-//    protected void onResume(){
-//        super.onResume();
-//        userHelper.close();
-//    }
-//
-//    @Override
-//    protected void onPause(){
-//        super.onPause();
-//        userHelper.close();
-//    }
+    public boolean isUserFavorited(String value) {
+        Uri uri = Uri.parse(CONTENT_URI + "/__check_status");
+        String selectString = USERNAME + " =?";
+        String[] projections = {
+                DatabaseContract.UserColumns._ID,
+                DatabaseContract.UserColumns.USERNAME,
+                DatabaseContract.UserColumns.AVATAR_URL,
+                DatabaseContract.UserColumns.FOLLOWER,
+                DatabaseContract.UserColumns.FOLLOWING
+        };
+        Cursor cursor = getContentResolver().query(uri, projections, selectString, new String[] {value}, null);
+        boolean hasObject = false;
+        if(cursor.moveToFirst()){
+            hasObject = true;
+            int count = 0;
+            while(cursor.moveToNext()){
+                count++;
+            }
+        }
+        cursor.close();
+        return hasObject;
+    }
 
     private void storeUserData(User githubUser){
         ContentValues values = new ContentValues();
@@ -182,23 +189,28 @@ public class DetailSelectedActivity extends AppCompatActivity {
         values.put(AVATAR_URL, githubUser.getAvatar());
         values.put(FOLLOWER, githubUser.getFollowers());
         values.put(FOLLOWING, githubUser.getFollowing());
-        long result = userHelper.insert(values);
-        if (result > 0) {
-//            Toast.makeText(DetailSelectedActivity.this, R.string.success_store_user, Toast.LENGTH_SHORT).show();
+        Uri result = getContentResolver().insert(DatabaseContract.UserColumns.CONTENT_URI, values);
+        if (result != null) {
             showSnackbarMessage(getResources().getString(R.string.success_store_user));
         } else {
-//            Toast.makeText(DetailSelectedActivity.this, R.string.fail_change_db, Toast.LENGTH_SHORT).show();
             showSnackbarMessage(getResources().getString(R.string.fail_change_db));
         }
     }
 
-    private void deteleUserData(User githubUser){
-        long result = userHelper.deleteByUsername(githubUser.getUsername());
+    private void deteleUserData(Uri uri, User githubUser){
+        String selectString = USERNAME + " =?";
+        String[] projections = {
+                DatabaseContract.UserColumns._ID,
+                DatabaseContract.UserColumns.USERNAME,
+                DatabaseContract.UserColumns.AVATAR_URL,
+                DatabaseContract.UserColumns.FOLLOWER,
+                DatabaseContract.UserColumns.FOLLOWING
+        };
+        long result = getContentResolver().delete(DatabaseContract.UserColumns.CONTENT_URI, selectString, new String[]{githubUser.getUsername()});
+//        long result = getContentResolver().delete(uri, null, null);
         if (result > 0) {
-//            Toast.makeText(DetailSelectedActivity.this, R.string.success_delete_user, Toast.LENGTH_SHORT).show();
             showSnackbarMessage(getResources().getString(R.string.success_delete_user));
         } else {
-//            Toast.makeText(DetailSelectedActivity.this, R.string.fail_change_db, Toast.LENGTH_SHORT).show();
             showSnackbarMessage(getResources().getString(R.string.fail_change_db));
         }
     }
@@ -207,12 +219,15 @@ public class DetailSelectedActivity extends AppCompatActivity {
         return received.getUsername();
     }
 
-    public void setUI(User GithubUser)
-    {
-        Log.d(TAG, "oncreate, Username : "+GithubUser.getUsername());
+    public void setUI(User GithubUser) {
+        Log.d(TAG, "oncreate, Username : " + GithubUser.getUsername());
 
-        if(GithubUser.getName() != "-") nameTv.setText(GithubUser.getUsername()+"\n("+GithubUser.getName()+")");
-        else nameTv.setText(GithubUser.getUsername());
+        if (GithubUser.getName() != "-"){
+            String detail_user_name = getResources().getString(R.string.user_name_detail, GithubUser.getUsername(), GithubUser.getName());
+            nameTv.setText(detail_user_name);
+        }else {
+            nameTv.setText(GithubUser.getUsername());
+        }
 
         blogTv.setText(GithubUser.getBlog());
         RequestOptions options = new RequestOptions()
@@ -264,7 +279,7 @@ public class DetailSelectedActivity extends AppCompatActivity {
                     temp_user.setPublic_repo(mRespons.getPublic_repos());
                     temp_user.setFollowers(mRespons.getFollowers());
                     temp_user.setFollowing(mRespons.getFollowing());
-
+                    favButton.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     setUI(temp_user);
                 }else{
@@ -279,45 +294,6 @@ public class DetailSelectedActivity extends AppCompatActivity {
             }
         });
     }
-
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        if (data != null) {
-//            // Akan dipanggil jika request codenya ADD
-//            if (requestCode == FavoriteUserActivity.REQUEST_ADD) {
-//                if (resultCode == FavoriteUserActivity.RESULT_ADD) {
-//                    User user = data.getParcelableExtra(FavoriteUserActivity.EXTRA_USER);
-//
-//                    adapter.addItem(user);
-//                    rvNotes.smoothScrollToPosition(adapter.getItemCount() - 1);
-//
-//                    showSnackbarMessage("Satu item berhasil ditambahkan");
-//                }
-//            }
-//            // Update dan Delete memiliki request code sama akan tetapi result codenya berbeda
-//            else if (requestCode == FavoriteUserActivity.REQUEST_UPDATE) {
-//                if (resultCode == FavoriteUserActivity.RESULT_UPDATE) {
-//
-//                    User user = data.getParcelableExtra(FavoriteUserActivity.EXTRA_NOTE);
-//                    int position = data.getIntExtra(FavoriteUserActivity.EXTRA_POSITION, 0);
-//
-//                    adapter.updateItem(position, user);
-//                    rvNotes.smoothScrollToPosition(position);
-//
-//                    showSnackbarMessage("Satu item berhasil diubah");
-//                }
-//                else if (resultCode == FavoriteUserActivity.RESULT_DELETE) {
-//                    int position = data.getIntExtra(FavoriteUserActivity.EXTRA_POSITION, 0);
-//
-//                    adapter.removeItem(position);
-//
-//                    showSnackbarMessage("Satu item berhasil dihapus");
-//                }
-//            }
-//        }
-//    }
 
     public User getDetailUser_Sync(String username){
         detailApi = BaseApiClient.getClient().create(DetailUserApi.class);

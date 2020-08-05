@@ -43,12 +43,8 @@ public class NotificationActivity extends AppCompatActivity {
                 .setSubText(getResources().getString(R.string.notif_subtext))
                 .setAutoCancel(true);
 
-        /*
-        Untuk android Oreo ke atas perlu menambahkan notification channel
-        */
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
-            /* Create or update. */
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
 
             mBuilder.setChannelId(CHANNEL_ID);

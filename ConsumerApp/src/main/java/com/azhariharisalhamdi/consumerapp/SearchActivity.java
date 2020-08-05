@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -41,6 +42,7 @@ public class SearchActivity extends AppCompatActivity {
     private RecyclerView recyclerViewUser;
     private TextInputLayout usernameInput;
     private TextInputEditText textInput;
+    private ImageView backgroundImg;
     private ProgressBar progressBar;
     private String finalText;
 
@@ -50,12 +52,16 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
         setTitle(R.string.search_activity_label);
 
+        backgroundImg = (ImageView) findViewById(R.id.background_img);
         progressBar = findViewById(R.id.progressBar);
         usernameInput = findViewById(R.id.username_input);
         textInput = findViewById(R.id.textInput);
         recyclerViewUser = findViewById(R.id.recyclerViewUser);
         recyclerViewUser.setHasFixedSize(true);
         progressBar.setVisibility(View.INVISIBLE);
+
+        backgroundImg.setImageResource(R.drawable.find_user);
+        backgroundImg.setVisibility(View.VISIBLE);
 
         textInput.addTextChangedListener(new TextWatcher() {
             @Override
@@ -65,6 +71,7 @@ public class SearchActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(s.length() != 0){
                     progressBar.setVisibility(View.VISIBLE);
+                    backgroundImg.setVisibility(View.INVISIBLE);
                     getUser_Async(usernameInput.getEditText().getText().toString());
                 }
             }
@@ -72,6 +79,7 @@ public class SearchActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 if(s.length() != 0){
                     progressBar.setVisibility(View.VISIBLE);
+                    backgroundImg.setVisibility(View.INVISIBLE);
                     finalText = usernameInput.getEditText().getText().toString();
                     if(finalText.length() != 0)
                         getUser_Async(usernameInput.getEditText().getText().toString());
@@ -84,6 +92,7 @@ public class SearchActivity extends AppCompatActivity {
         textInput.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 progressBar.setVisibility(View.VISIBLE);
+                backgroundImg.setVisibility(View.INVISIBLE);
                 finalText = usernameInput.getEditText().getText().toString();
                 if(finalText.length() != 0)
                     getUser_Async(usernameInput.getEditText().getText().toString());
@@ -134,8 +143,12 @@ public class SearchActivity extends AppCompatActivity {
     private void showRecyclerList(ArrayList<User> userlist){
         progressBar.setVisibility(View.INVISIBLE);
         recyclerViewUser.setLayoutManager(new LinearLayoutManager(this));
-        if(finalText.length() == 0)
+        if(finalText.length() == 0) {
             userlist.clear();
+            backgroundImg.setVisibility(View.VISIBLE);
+        }
+        if(userlist == null)
+            backgroundImg.setVisibility(View.VISIBLE);
         ListUsersAdapter listUsersAdapter = new ListUsersAdapter(userlist);
         recyclerViewUser.setAdapter(listUsersAdapter);
 
@@ -153,7 +166,7 @@ public class SearchActivity extends AppCompatActivity {
 
     public void changeActivity(User user){
         Intent moveWithObjectIntent = new Intent(SearchActivity.this, DetailSelectedActivity.class);
-        moveWithObjectIntent.putExtra(DetailSelectedActivity.USER_DATA_DETAIL, user);
+        moveWithObjectIntent.putExtra(DetailSelectedActivity.USER_DATA_DETAIL_SEARCH, user);
         startActivity(moveWithObjectIntent);
     }
 
@@ -167,7 +180,6 @@ public class SearchActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.settings:
-//                Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
                 Intent mIntent = new Intent(SearchActivity.this, SettingsActivity.class);
                 startActivity(mIntent);
                 return true;
